@@ -1,0 +1,124 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button{margin:0;padding:0;}
+body,button,input,select,textarea{font-size:100%;font-family:Sans-Serif;}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none;}
+input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:inherit;}
+fieldset,img,a img{border:0;}
+iframe{display:block;}
+abbr,acronym{border:0;font-variant:normal;}
+del{text-decoration:line-through;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+q:before,q:after{content:'';}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+ins,a{text-decoration:none;}
+a,input{-webkit-tap-highlight-color: transparent;}
+a{-webkit-touch-callout:none;}
+input[type=button],input[type=submit],input[type=reset]{-webkit-appearance: none;}
+select{outline: none;  -webkit-tap-highlight-color: rgba(0,0,0,0); } /* 去除select 选中高亮  */
+textarea { resize : none; } /* 取消掉textarea 右下角的拖拽*/
+.fn-clear:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.fn-hide{display:none;}
+.fn-left,.fn-right{display:inline;}
+.fn-left{float:left;}
+.fn-right{float:right;}
+
+/* CSS Document */
+/*字体改为rem*/
+.fs16rem{font-size:0.16rem}
+.fs18rem{font-size:0.18rem}
+.fs20rem{font-size:0.20rem}
+.fs22rem{font-size:0.22rem}
+.fs24rem{font-size:0.24rem}
+.fs26rem{font-size:0.26rem}
+.fs28rem{font-size:0.28rem}
+.fs30rem{font-size:0.30rem}
+.fs32rem{font-size:0.32rem}
+.fs34rem{font-size:0.34rem}
+.fs36rem{font-size:0.36rem}
+.fs38rem{font-size:0.38rem}
+.fs40rem{font-size:0.40rem}
+.fs42rem{font-size:0.42rem}
+.fs44rem{font-size:0.44rem}
+.fs46rem{font-size:0.46rem}
+.fs48rem{font-size:0.48rem}
+.fs50rem{font-size:0.50rem}
+/*行高改为rem*/
+.lh20rem{line-height:0.20rem}
+.lh22rem{line-height:0.22rem}
+.lh24rem{line-height:0.24rem}
+.lh28rem{line-height:0.28rem}
+.lh32rem{line-height:0.32rem}
+.lh36rem{line-height:0.36rem}
+.lh40rem{line-height:0.40rem}
+.lh60rem{line-height:0.60rem}
+.lh70rem{line-height:0.70rem}
+/*高度改为rem*/
+.h20rem{height:0.20rem}
+.h30rem{height:0.30rem}
+.h40rem{height:0.40rem}
+/*内边距*/
+.pl10{padding-left:10px}
+.pr10{padding-right:10px}
+.pb1{padding-bottom: .1rem;}
+.pl2pr2{padding: 0 .2rem;}
+.pb2{padding-bottom: .2rem;}
+.pr2{padding-right: .2rem;}
+
+/*  2017.6.5 巫敏 新增 */
+.pt2pb2{padding: .2rem 0;}
+.color_fcd12f{color: #fcd12f;}
+.bgd6d6d6{background-color: #d6d6d6;}
+.color_1c1c1c{color: #1c1c1c;}
+.pl2{padding-left: .2rem;}
+.pt2{padding-top: .2rem;}
+.pt1{padding-top: .1rem;}
+.mt1{margin-top: .1rem;}
+
+
+/*外边距*/
+.mt5{margin-top:5px}
+.ml5{margin-left:5px}
+.mr5{margin-right: 5px;}
+.mr10{margin-right:10px}
+.mr15 { margin-right: 15px;}
+.ml10{margin-left:10px}
+.mb1{margin-bottom: .1rem;}
+.mb2{margin-bottom: .2rem;} 
+
+/*浮动*/
+.inline{display:inline}
+/*字体位置*/
+.txtcenter{text-align:center}
+.txtleft{text-align:left}
+.txtright{text-align:right}
+/*颜色*/
+.bgf2f2f2{background:#f2f2f2}
+.bgf1f1f1{background-color: #f1f1f1;}
+.bgf7f7f7{background:#f7f7f7}
+.bgfff{background:#fff}
+.c999{color:#999}
+.c666{color: #666;}
+.cff6666{color: #ff6666;}
+.c333{color: #333333;}
+
+
+input,textarea{outline: none;}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a,input,label,select,span{-webkit-tap-highlight-color: transparent;}
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight-color: transparent; tap-highlight-color:rgba(0,0,0,0); tap-highlight-color:transparent;}
+
+
+  body {
+  margin: 0 auto;
+}

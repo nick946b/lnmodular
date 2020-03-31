@@ -9,6 +9,8 @@ import '@smallwei/avue/lib/index.css'
 import AvueModularDesign from './components';
 import $ from 'jquery'
 
+
+
 Vue.use(Vant);
 Vue.use(Avue);
 Vue.use(AvueModularDesign);

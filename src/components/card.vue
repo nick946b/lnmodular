@@ -1,6 +1,5 @@
 <template>
   <div>
-    
     <el-form-item label="商品标题">
       <el-input v-model="data.title" placeholder="商品标题"></el-input>
     </el-form-item>

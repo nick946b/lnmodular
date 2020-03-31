@@ -1,10 +1,13 @@
 
 import Card from './card.vue'
 import GoodsAction from './goodsaction.vue'
+import Options from './options.vue'
 
 const components = [//组件包js
   Card,
-  GoodsAction
+  GoodsAction,
+  Options
+
 ]
 
 const Config = {

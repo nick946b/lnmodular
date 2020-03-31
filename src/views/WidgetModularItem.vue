@@ -28,9 +28,11 @@
 </template>
 
 <script>
+import Options from './options';
 export default {
   name: "widget-modular-item",
   props: ["item"],
+  components:{Options},
   data() {
     return {
       form: {}
@@ -45,27 +47,31 @@ export default {
     // },
     getComponent(type) {
       //封装好的component在这里调用处理并返回各个组件的编辑数据 ？事件？
-     
+
       // let KEY_COMPONENT_NAME = 'avue-';
       let KEY_COMPONENT_NAME = "van-";
       let result = "input"; //默认是input类型
-       
+
       //  if($(".modshow").find(".van-goods-action").length==2&&type==="goods-action"){
       //     return;
       // }
 
-      $(".modshow").find(".van-goods-action").each(function(index,e){
-         var as = $(e).parent(".modshow").parent(".widget-modular-item").parent(".el-col-md-24");
-        //  console.log(as);
-            // as.css("position","fixed");
-            // as.css("width","400px");
-            // as.css("bottom","0");   
-            $(e).css("position","relative");
-            // $(e).parent(".modshow").parent(".widget-modular-item").css("bottom","55px");
-            // console.log( $(e).parent(".modshow").parent(".widget-modular-item").find(".widget-action-clone"));
-            // $(e).parent(".modshow").parent(".widget-modular-item").find(".widget-action-clone").remove();
-            
-      });
+      $(".modshow")
+        .find(".van-goods-action")
+        .each(function(index, e) {
+          var as = $(e)
+            .parent(".modshow")
+            .parent(".widget-modular-item")
+            .parent(".el-col-md-24");
+          //  console.log(as);
+          // as.css("position","fixed");
+          // as.css("width","400px");
+          // as.css("bottom","0");
+          $(e).css("position", "relative");
+          // $(e).parent(".modshow").parent(".widget-modular-item").css("bottom","55px");
+          // console.log( $(e).parent(".modshow").parent(".widget-modular-item").find(".widget-action-clone"));
+          // $(e).parent(".modshow").parent(".widget-modular-item").find(".widget-action-clone").remove();
+        });
 
       // if(type === "goods-action"){
       //  var as = $(".modshow").find(".van-goods-action").parent(".modshow")
@@ -76,14 +82,14 @@ export default {
       //    as.css("bottom","0");
       //   return;
       // }
-      if (type === "card") result = "card";
-      else if (type === "goods-action") result = "goods-action";
-      else if (type === "button") result = "button";
-      else if (type === "goods-action") result = "goods-action";
-      else if (type === "goods-action-icon") result = "goods-action-icon";
-      else if (type === "goods-action-button") result = "goods-action-button";
-      
-      return KEY_COMPONENT_NAME + result;
+      if(type === "options") result = "options";
+      if (type === "card") result = "van-card";
+      else if (type === "goods-action") result = "van-goods-action";
+      else if (type === "button") result = "van-button";
+      else if (type === "goods-action") result = "van-goods-action";
+      else if (type === "goods-action-icon") result = "van-goods-action-icon";
+      else if (type === "goods-action-button") result = "van-goods-action-button";
+      return result;
     },
 
     getPlaceholder(item) {
@@ -113,6 +119,3 @@ export default {
 </script>
 <style lang="scss">
 </style>
-
-
-
